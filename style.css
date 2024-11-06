@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "Ubuntu", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    padding-top: 8%;
+}
+.main-container{
+    width: 75%;
+    height: fit-content;
+    display: flex;
+    
+}
+.gift{
+    width: 40%;
+    height: 45vh;
+    background: url("https://images.unsplash.com/photo-1703434123142-1b41a1b1055b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center / cover no-repeat;
+    border: 6px solid #01BAEF;
+    border-radius: 10px;
+}
+/* .gift img {
+    background: center / cover no-repeat;
+} */
+.details{
+    width: 60%;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 30px;
+}
+.gift-name{
+    font-weight: bold;
+    margin-bottom: 1%;
+    color: #0B4F6C;
+    font-size: 2rem;
+}
+.expiry-date{
+    margin-bottom: 4%;
+}
+.desc{
+    color: #776e6e;
+    margin-bottom: 3%;
+}
+.dead-line{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 10px;
+}
+.counter-container{
+    height:3rem;
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #040F16;
+}
+.counter-container p,h1{
+    font-weight: lighter;
+}
+.expired{
+    color: rgb(250, 74, 21);
+}
+
+@media (max-width:860px){
+    .main-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .gift{
+        width: 50%;
+    }
+    .gift-name{
+        font-size: 28px;
+    }
+    .details{
+        width: 65%;
+    }
+    
+
+}
+
+@media (max-width:700px){
+    .gift-name{
+        font-size: 25px;
+    }
+    .details{
+        width: 80%;
+    }
+    .expiry-date{
+        font-size: 15px;
+    }
+}
+@media (max-width:510px){
+    body{
+        display: inline-block;
+    }
+    .main-container{
+        margin: auto;
+        width: 100%;
+    }
+    .details{
+        width: 95%;
+        padding: 0px 20px;
+    }
+    .desc{
+        font-size: 15px;
+    }
+}
+@media (max-width:410px){
+    .gift-name{
+        font-size: 20px;
+    }
+    .details{
+        width: 100%;
+    }
+
+
+}
