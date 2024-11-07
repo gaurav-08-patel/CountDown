@@ -62,11 +62,18 @@ const months = [
 
     let time = [day,hour,minute,secs];
 
-
+    function format(item){
+      if(item<10){
+        return "0"+`${item}`;
+      }
+      else{
+        return `${item}`;
+      }
+    }
 
 
     timers.forEach((item,index)=>{
-        item.innerText=`${time[index]}`;
+        item.innerText=format(time[index]);
 
     })
     if(t<0){
